@@ -1,0 +1,36 @@
+---
+import Layout from '../layouts/BaseLayout.astro'
+
+const phone = '+7 3124136771'
+const email = 'contacto@aromasquirences.com'
+---
+
+<Layout>
+  <main class="container">
+    <header class="hero">
+      <img src="/logo.png" alt="Aromas Quirences logo" class="logo" />
+      <h1>Bienvenidos a Aromas Quirences</h1>
+      <p class="lead">Jugos naturales y más, hechos con cariño.</p>
+    </header>
+
+    <section class="products">
+      <article class="product">
+        <img src="/JugoMango.png" alt="Jugo de mango" />
+        <h2>Jugo de Mango</h2>
+        <p>Refrescante y natural. Sin conservantes.</p>
+      </article>
+
+      <article class="product">
+        <img src="/JugoMora.png" alt="Jugo de mora" />
+        <h2>Jugo de Mora</h2>
+        <p>Sabor intenso y auténtico.</p>
+      </article>
+    </section>
+
+    <section class="contact">
+      <h3>Contacto</h3>
+      <p>Teléfono: <a href={`tel:${phone}`}>{phone}</a></p>
+      <p>Correo: <a href={`mailto:${email}`}>{email}</a></p>
+    </section>
+  </main>
+</Layout>

@@ -1,0 +1,17 @@
+:root{
+  --bg: #fff8f3;
+  --accent: #d86b3b;
+  --muted: #6b6b6b;
+  --gap: 1rem;
+}
+*{box-sizing:border-box}
+body{font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:var(--bg); color:#222; margin:0}
+.container{max-width:900px;margin:0 auto;padding:2rem}
+.hero{display:flex;align-items:center;gap:1rem}
+.logo{width:96px;height:96px;object-fit:contain}
+.lead{color:var(--muted)}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:var(--gap);margin-top:2rem}
+.product{background:white;border-radius:8px;padding:1rem;box-shadow:0 6px 18px rgba(0,0,0,0.06);text-align:center}
+.product img{max-width:180px;height:auto}
+.contact{margin-top:2rem;padding:1rem;background:#fff;border-radius:8px}
+a{color:var(--accent);text-decoration:none}
