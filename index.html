@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aromas Quirences - Desde Zetaquira, Boyacá</title>
+    <!-- Importando Lato desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --quirences-green: #0d4d2a;
+            --quirences-lime: #8bc34a;
+            --dark-text: #1a1a1a;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #fdfdfd;
+            color: var(--dark-text);
+            scroll-behavior: smooth;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(rgba(13, 77, 42, 0.85), rgba(13, 77, 42, 0.95)), 
+                        url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 1);
+            border: 1px solid rgba(13, 77, 42, 0.1);
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(13, 77, 42, 0.1);
+        }
+
+        .text-quirences { color: var(--quirences-green); }
+        .bg-quirences { background-color: var(--quirences-green); }
+        
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #128C7E;
+            transform: scale(1.02);
+        }
+
+        .section-title {
+            font-weight: 900;
+            letter-spacing: -0.02em;
+            text-transform: uppercase;
+        }
+
+        .process-img {
+            aspect-ratio: 4/3;
+            object-fit: cover;
+            border-radius: 1rem;
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- Navegación -->
+    <nav class="fixed w-full z-50 px-6 py-4 bg-white/95 backdrop-blur-md flex justify-between items-center border-b border-gray-100 shadow-sm">
+        <div class="flex items-center space-x-2">
+            <div class="flex flex-col leading-none">
+                <span class="text-xl font-black text-quirences">AROMAS</span>
+                <span class="text-xl font-black text-quirences -mt-1 italic">QUIRENCES</span>
+            </div>
+        </div>
+        <div class="hidden md:flex space-x-8 font-bold text-xs tracking-widest uppercase text-gray-600">
+            <a href="#inicio" class="hover:text-quirences">Inicio</a>
+            <a href="#productos" class="hover:text-quirences">Productos</a>
+            <a href="#proceso" class="hover:text-quirences">Calidad</a>
+            <a href="#contacto" class="hover:text-quirences">Contacto</a>
+        </div>
+        <a href="https://wa.me/573000000000" target="_blank" class="btn-whatsapp px-5 py-2 rounded-full font-bold text-[10px] uppercase tracking-widest flex items-center">
+            Pedir por WhatsApp
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="min-h-screen flex flex-col justify-center items-center text-center px-6 hero-gradient text-white">
+        <div class="max-w-4xl pt-16">
+            <span class="inline-block px-4 py-1 mb-6 rounded-full bg-lime-500 text-quirences text-[10px] font-black uppercase tracking-[0.2em]">Zetaquira, Boyacá • Colombia</span>
+            <h1 class="font-black text-5xl md:text-7xl mb-6 leading-tight">
+                DEL CAMPO BOYACENSE <br> <span class="text-lime-400">A TU MESA.</span>
+            </h1>
+            <p class="text-lg md:text-xl font-light text-green-50 mb-10 max-w-2xl mx-auto leading-relaxed">
+                Pulpa de fruta, jugos naturales y congelados IQF con el aroma único de nuestra tierra. Calidad de exportación directamente desde Zetaquira.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6">
+                <a href="#productos" class="bg-white text-quirences px-10 py-4 rounded-xl font-black text-sm uppercase tracking-widest shadow-xl hover:bg-lime-500 hover:text-white transition-all">Ver Catálogo</a>
+                <a href="https://wa.me/573000000000" target="_blank" class="btn-whatsapp px-10 py-4 rounded-xl font-black text-sm uppercase tracking-widest shadow-xl flex justify-center items-center">
+                    Escríbenos ahora
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Productos -->
+    <section id="productos" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="section-title text-4xl text-gray-800">Nuestros Productos</h2>
+            <p class="text-gray-500 mt-2 font-light">Fruta seleccionada en su punto óptimo de madurez</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Producto 1: Congelados -->
+            <div class="glass-card overflow-hidden">
+                <div class="h-64 bg-blue-50 flex items-center justify-center text-6xl">❄️</div>
+                <div class="p-8">
+                    <span class="text-[10px] font-black text-blue-500 uppercase tracking-widest">Congelados IQF</span>
+                    <h3 class="font-black text-2xl text-quirences mt-2 mb-4">FRUTA CONGELADA</h3>
+                    <p class="text-gray-600 font-light text-sm mb-6">Mora, fresa, arándanos y mix de frutos rojos. Congelados individualmente para mantener frescura y nutrientes.</p>
+                    <a href="https://wa.me/573000000000" class="block text-center py-3 bg-gray-100 text-quirences font-black rounded-lg uppercase text-xs tracking-widest hover:bg-quirences hover:text-white transition-all">Consultar Precios</a>
+                </div>
+            </div>
+
+            <!-- Producto 2: Jugos -->
+            <div class="glass-card overflow-hidden border-t-4 border-quirences">
+                <div class="h-64 bg-orange-50 flex items-center justify-center text-6xl">🥤</div>
+                <div class="p-8">
+                    <span class="text-[10px] font-black text-orange-500 uppercase tracking-widest">Naturales</span>
+                    <h3 class="font-black text-2xl text-quirences mt-2 mb-4">JUGOS NATURALES</h3>
+                    <p class="text-gray-600 font-light text-sm mb-6">Jugos 100% naturales embotellados. Sin azúcares añadidos ni conservantes químicos. El sabor real de la fruta.</p>
+                    <a href="https://wa.me/573000000000" class="block text-center py-3 bg-quirences text-white font-black rounded-lg uppercase text-xs tracking-widest hover:bg-lime-600 transition-all">Pedir Jugos</a>
+                </div>
+            </div>
+
+            <!-- Producto 3: Pulpas -->
+            <div class="glass-card overflow-hidden">
+                <div class="h-64 bg-green-50 flex items-center justify-center text-6xl">🥭</div>
+                <div class="p-8">
+                    <span class="text-[10px] font-black text-green-600 uppercase tracking-widest">Versatilidad</span>
+                    <h3 class="font-black text-2xl text-quirences mt-2 mb-4">PULPAS PURAS</h3>
+                    <p class="text-gray-600 font-light text-sm mb-6">Pulpa de mango, maracuyá, guanábana y más. Ideales para casinos, restaurantes y hogares.</p>
+                    <a href="https://wa.me/573000000000" class="block text-center py-3 bg-gray-100 text-quirences font-black rounded-lg uppercase text-xs tracking-widest hover:bg-quirences hover:text-white transition-all">Ver Variedades</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Calidad y Proceso -->
+    <section id="proceso" class="py-24 bg-gray-50 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="section-title text-4xl text-quirences mb-8 leading-tight">Proceso y Calidad <br><span class="text-lime-500 italic">Desde Zetaquira</span></h2>
+                    <p class="text-gray-600 font-light mb-6 text-lg">En Zetaquira, Boyacá, seleccionamos manualmente cada fruta. Nuestro proceso garantiza que el aroma y sabor que llega a tu mesa sea el mismo que el del campo.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-quirences text-white p-2 rounded-lg">✓</div>
+                            <div>
+                                <h4 class="font-black uppercase text-xs">Selección Manual</h4>
+                                <p class="text-gray-500 text-sm font-light">Solo la mejor fruta entra en nuestro proceso de producción.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-quirences text-white p-2 rounded-lg">✓</div>
+                            <div>
+                                <h4 class="font-black uppercase text-xs">Higiene Rigurosa</h4>
+                                <p class="text-gray-500 text-sm font-light">Lavado y desinfección profunda cumpliendo estándares INVIMA.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-quirences text-white p-2 rounded-lg">✓</div>
+                            <div>
+                                <h4 class="font-black uppercase text-xs">Cadena de Frío</h4>
+                                <p class="text-gray-500 text-sm font-light">Mantenemos la temperatura ideal para preservar nutrientes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Galería de Fotos del Proceso (Simulada con placeholders para que tú las pongas) -->
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-white p-2 rounded-2xl shadow-sm">
+                        <div class="bg-gray-200 rounded-xl process-img flex items-center justify-center text-gray-400 text-xs text-center p-4 italic">[Imagen del cultivo en Zetaquira]</div>
+                    </div>
+                    <div class="bg-white p-2 rounded-2xl shadow-sm mt-8">
+                        <div class="bg-gray-200 rounded-xl process-img flex items-center justify-center text-gray-400 text-xs text-center p-4 italic">[Imagen de selección de fruta]</div>
+                    </div>
+                    <div class="bg-white p-2 rounded-2xl shadow-sm -mt-8">
+                        <div class="bg-gray-200 rounded-xl process-img flex items-center justify-center text-gray-400 text-xs text-center p-4 italic">[Imagen de empaque al vacío]</div>
+                    </div>
+                    <div class="bg-white p-2 rounded-2xl shadow-sm">
+                        <div class="bg-gray-200 rounded-xl process-img flex items-center justify-center text-gray-400 text-xs text-center p-4 italic">[Imagen de jugos terminados]</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto / WhatsApp -->
+    <section id="contacto" class="py-24 px-6 text-center">
+        <div class="max-w-2xl mx-auto bg-white p-12 rounded-[3rem] border-2 border-dashed border-quirences/20">
+            <h2 class="section-title text-3xl text-quirences mb-4">¿Quieres hacer un pedido?</h2>
+            <p class="text-gray-500 font-light mb-10">Realizamos envíos locales y a nivel nacional. Haz clic abajo para hablar directamente con nosotros por WhatsApp.</p>
+            <a href="https://wa.me/573000000000" target="_blank" class="btn-whatsapp px-12 py-5 rounded-2xl font-black text-lg uppercase tracking-widest shadow-2xl flex items-center justify-center mx-auto max-w-sm">
+                Escribir al WhatsApp
+            </a>
+            <div class="mt-8 flex justify-center space-x-6 text-xs font-black uppercase tracking-widest text-gray-400">
+                <span>Zetaquira</span>
+                <span>•</span>
+                <span>Boyacá</span>
+                <span>•</span>
+                <span>Colombia</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-quirences text-white py-16 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+            <div class="mb-8 md:mb-0">
+                <div class="text-2xl font-black tracking-tighter mb-2">AROMAS QUIRENCES</div>
+                <p class="text-green-200 font-light text-sm">Orgullosamente de Zetaquira, Boyacá.</p>
+            </div>
+            <div class="text-center md:text-right">
+                <p class="text-xs uppercase tracking-widest font-black mb-2">Contacto Directo</p>
+                <p class="text-lg font-light">info@aromasquirences.com</p>
+                <p class="text-lg font-light">+57 300 000 0000</p>
+            </div>
+        </div>
+        <div class="mt-12 pt-8 border-t border-white/10 text-center text-[10px] uppercase tracking-[0.4em] text-green-300/50">
+            &copy; 2024 Aromas Quirences • El Sabor de Nuestra Tierra
+        </div>
+    </footer>
+
+</body>
+</html>
