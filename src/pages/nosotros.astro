@@ -1,0 +1,232 @@
+---
+import Layout from '../layouts/BaseLayout.astro'
+
+const phone = '+57 3124136771'
+const email = 'contacto@aromasquirences.com'
+---
+
+<Layout>
+  <!-- Navegación -->
+  <nav class="fixed w-full z-50 px-6 py-4 bg-white/95 backdrop-blur-md flex justify-between items-center border-b border-gray-100 shadow-sm">
+    <div class="flex items-center">
+      <img src="/logo.png" alt="Aromas Quirences logo" class="h-16 w-auto object-contain" />
+    </div>
+    <div class="hidden md:flex space-x-8 font-bold text-xs tracking-widest uppercase text-gray-600">
+      <a href="/" class="hover:text-quirences-green transition-colors duration-300">Inicio</a>
+      <a href="/#productos" class="hover:text-quirences-green transition-colors duration-300">Productos</a>
+      <a href="/nosotros" class="hover:text-quirences-green text-quirences-green transition-colors duration-300">Nosotros</a>
+      <a href="/#proceso" class="hover:text-quirences-green transition-colors duration-300">Calidad</a>
+      <a href="/#contacto" class="hover:text-quirences-green transition-colors duration-300">Contacto</a>
+    </div>
+    <a href={`https://wa.me/${phone.replace(/[^0-9]/g, '')}`} target="_blank" class="btn-whatsapp px-5 py-2 rounded-full font-bold text-[10px] uppercase tracking-widest flex items-center">
+      Pedir por WhatsApp
+    </a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="min-h-[60vh] flex flex-col justify-center items-center text-center px-6 hero-gradient text-white" aria-labelledby="nosotros-heading">
+    <div class="max-w-4xl pt-16">
+      <h1 id="nosotros-heading" class="font-black text-5xl md:text-7xl mb-6 leading-tight animate-fade-in-up">
+        SOBRE <span class="text-lime-400">NOSOTROS</span>
+      </h1>
+      <p class="text-lg md:text-xl font-light text-green-50 mb-10 max-w-2xl mx-auto leading-relaxed animate-fade-in-up animation-delay-200">
+        Más que una empresa, somos guardianes del sabor boyacense
+      </p>
+    </div>
+  </section>
+
+  <!-- Quiénes Somos -->
+  <section class="py-24 px-6 max-w-6xl mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div class="space-y-8 animate-fade-in-left">
+        <h2 class="font-black text-4xl text-quirences-green leading-tight">
+          Guardianes del <span class="text-lime-500 italic">Sabor Auténtico</span>
+        </h2>
+        <div class="space-y-6 text-gray-700 font-light leading-relaxed">
+          <p>
+            Nacimos en el corazón de Zetaquira, Boyacá, con una misión clara: llevar el sabor puro de nuestra tierra a cada hogar colombiano. No somos simplemente productores; somos cultivadores, seleccionadores y embajadores del excepcional sabor que nos define como región.
+          </p>
+          <p>
+            Cada fruta que pasa por nuestras manos representa décadas de conocimiento agrícola combinada con estándares internacionales de calidad. Hemos logrado el equilibrio perfecto entre tradición e innovación, respetando los ciclos naturales mientras aplicamos tecnología de vanguardia para preservar cada nota de sabor.
+          </p>
+        </div>
+      </div>
+      <div class="animate-fade-in-right">
+        <img src="/JugoMango.png" alt="Nuestra historia" class="rounded-2xl shadow-2xl w-full h-96 object-cover" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Misión, Visión, Valores -->
+  <section class="py-24 px-6 bg-gray-50">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Misión -->
+        <div class="bg-white p-8 rounded-2xl shadow-lg transform hover:-translate-y-2 transition-all duration-300 animate-fade-in-up">
+          <div class="bg-quirences-green text-white p-3 rounded-full w-12 h-12 flex items-center justify-center mb-6">
+            <span class="text-xl">🎯</span>
+          </div>
+          <h3 class="font-black text-xl text-quirences-green mb-4">Misión</h3>
+          <p class="text-gray-600 font-light leading-relaxed">
+            Transformar la exótica riqueza frutícola de Boyacá en productos de alta calidad que conecten directamente al consumidor con el origen, preservando la autenticidad y frescura de cada cosecha.
+          </p>
+        </div>
+
+        <!-- Visión -->
+        <div class="bg-white p-8 rounded-2xl shadow-lg transform hover:-translate-y-2 transition-all duration-300 animate-fade-in-up animation-delay-200">
+          <div class="bg-quirences-green text-white p-3 rounded-full w-12 h-12 flex items-center justify-center mb-6">
+            <span class="text-xl">👁️</span>
+          </div>
+          <h3 class="font-black text-xl text-quirences-green mb-4">Visión</h3>
+          <p class="text-gray-600 font-light leading-relaxed">
+            Ser el referente nacional en productos naturales de origen Boyacá, reconocidos por nuestra trazabilidad, innovación en conservación y compromiso inquebrantable con la sostenibilidad agrícola.
+          </p>
+        </div>
+
+        <!-- Valores -->
+        <div class="bg-white p-8 rounded-2xl shadow-lg transform hover:-translate-y-2 transition-all duration-300 animate-fade-in-up animation-delay-400">
+          <div class="bg-quirences-green text-white p-3 rounded-full w-12 h-12 flex items-center justify-center mb-6">
+            <span class="text-xl">💎</span>
+          </div>
+          <h3 class="font-black text-xl text-quirences-green mb-4">Valores</h3>
+          <p class="text-gray-600 font-light leading-relaxed">
+            Autenticidad, calidad consistente, respeto por la tierra, transparencia en el proceso, innovación responsable y orgullo por nuestras raíces Boyacenses.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Diferenciadores -->
+  <section class="py-24 px-6 max-w-6xl mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="font-black text-4xl text-gray-800 mb-4">Nuestra Ventaja Competitiva</h2>
+      <p class="text-gray-500 font-light text-lg">Lo que nos hace únicos en el mercado</p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <div class="space-y-6 animate-fade-in-left">
+        <div class="flex items-start space-x-4 p-6 rounded-xl bg-lime-50 hover:bg-lime-100 transition-colors duration-300">
+          <div class="bg-quirences-green text-white p-3 rounded-lg">
+            <span class="text-2xl">🌱</span>
+          </div>
+          <div>
+            <h4 class="font-black text-lg text-quirences-green mb-2">Origen Certificado</h4>
+            <p class="text-gray-600 font-light">Cada producto traza su historia desde el árbol hasta tu mesa, con certificación de origen Boyacense garantizada.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start space-x-4 p-6 rounded-xl bg-orange-50 hover:bg-orange-100 transition-colors duration-300">
+          <div class="bg-quirences-green text-white p-3 rounded-lg">
+            <span class="text-2xl">🔬</span>
+          </div>
+          <div>
+            <h4 class="font-black text-lg text-quirences-green mb-2">Tecnología IQF</h4>
+            <p class="text-gray-600 font-light">Congelación ultra-rápida que preserva el 98% de nutrientes y el sabor fresco de la cosecha.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-y-6 animate-fade-in-right">
+        <div class="flex items-start space-x-4 p-6 rounded-xl bg-blue-50 hover:bg-blue-100 transition-colors duration-300">
+          <div class="bg-quirences-green text-white p-3 rounded-lg">
+            <span class="text-2xl">🤝</span>
+          </div>
+          <div>
+            <h4 class="font-black text-lg text-quirences-green mb-2">Comercio Directo</h4>
+            <p class="text-gray-600 font-light">Eliminamos intermediarios para ofrecer precios justos y garantizar la máxima frescura del producto.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start space-x-4 p-6 rounded-xl bg-green-50 hover:bg-green-100 transition-colors duration-300">
+          <div class="bg-quirences-green text-white p-3 rounded-lg">
+            <span class="text-2xl">♻️</span>
+          </div>
+          <div>
+            <h4 class="font-black text-lg text-quirences-green mb-2">Sostenibilidad</h4>
+            <p class="text-gray-600 font-light">Prácticas agrícolas responsables y empaque biodegradable que minimiza nuestro impacto ambiental.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-24 px-6 bg-quirences-green text-white text-center">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="font-black text-4xl mb-6 animate-fade-in-up">¿Listo para probar el sabor auténtico?</h2>
+      <p class="text-lg font-light mb-10 animate-fade-in-up animation-delay-200">Únete a miles de colombianos que ya descubrieron la diferencia de un producto con alma y origen.</p>
+      <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6 animate-fade-in-up animation-delay-300">
+        <a href="/#productos" class="bg-white text-quirences-green px-10 py-4 rounded-xl font-black text-sm uppercase tracking-widest shadow-xl hover:bg-lime-500 hover:text-white transition-all duration-300 transform hover:scale-105">
+          Ver Productos
+        </a>
+        <a href={`https://wa.me/${phone.replace(/[^0-9]/g, '')}`} target="_blank" class="btn-whatsapp px-10 py-4 rounded-xl font-black text-sm uppercase tracking-widest shadow-xl flex justify-center items-center transform hover:scale-105 transition-all duration-300">
+          Contactar por WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  /* Animaciones personalizadas */
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fade-in-left {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes fade-in-right {
+    from {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fade-in-up 0.8s ease-out forwards;
+    opacity: 0;
+  }
+
+  .animate-fade-in-left {
+    animation: fade-in-left 0.8s ease-out forwards;
+    opacity: 0;
+  }
+
+  .animate-fade-in-right {
+    animation: fade-in-right 0.8s ease-out forwards;
+    opacity: 0;
+  }
+
+  .animation-delay-200 {
+    animation-delay: 0.2s;
+  }
+
+  .animation-delay-300 {
+    animation-delay: 0.3s;
+  }
+
+  .animation-delay-400 {
+    animation-delay: 0.4s;
+  }
+</style>
