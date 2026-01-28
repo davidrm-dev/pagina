@@ -1,12 +1,8 @@
----
-import { getCollection } from 'astro:content'
-
 export async function GET(context) {
+  const site = context.site || 'https://aromasquirences.com'
   const pages = [
-    { url: context.site, lastmod: new Date().toISOString() },
-    { url: `${context.site}#productos`, lastmod: new Date().toISOString() },
-    { url: `${context.site}#proceso`, lastmod: new Date().toISOString() },
-    { url: `${context.site}#contacto`, lastmod: new Date().toISOString() },
+    { url: site, lastmod: new Date().toISOString() },
+    { url: `${site}/nosotros`, lastmod: new Date().toISOString() },
   ]
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
