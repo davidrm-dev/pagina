@@ -2,27 +2,91 @@
 import '../styles/global.css'
 ---
 <!doctype html>
-<html lang="es">
+<html lang="es-CO">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Aromas Quirences - Desde Zetaquira, Boyacá</title>
-    <meta name="description" content="Del campo boyacense a tu mesa. Pulpa de fruta, jugos naturales y congelados IQF con el aroma único de nuestra tierra. Calidad de exportación directamente desde Zetaquira." />
+    
+    <!-- Primary Meta Tags -->
+    <title>Aromas Quirences | Jugos Naturales & Pulpa de Fruta de Zetaquira, Boyacá</title>
+    <meta name="description" content="✅ Jugos 100% naturales y pulpa de fruta directamente de Zetaquira, Boyacá. 🥭🍓 Calidad de exportación, sin conservantes. Envíos a todo Colombia. ¡Pide ahora!" />
+    <meta name="keywords" content="jugos naturales, pulpa de fruta, zetaquira, boyaca, frutos rojos, jugos sin conservantes, congelados IQF, mora, mango, maracuya, guanabana, aromas quirences, colombia, exportacion" />
+    <meta name="author" content="Aromas Quirences" />
+    <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#0d4d2a" />
+    <link rel="canonical" href="https://aromasquirences.com/" />
 
-    <!-- Preconnect Google Fonts -->
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://aromasquirences.com/" />
+    <meta property="og:title" content="Aromas Quirences | Jugos Naturales & Pulpa de Fruta de Zetaquira" />
+    <meta property="og:description" content="✅ Jugos 100% naturales y pulpa de fruta directamente de Zetaquira, Boyacá. 🥭🍓 Calidad de exportación, sin conservantes. Envíos a todo Colombia." />
+    <meta property="og:image" content="https://aromasquirences.com/logo.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="es_CO" />
+    <meta property="og:site_name" content="Aromas Quirences" />
+
+    <!-- Twitter Card -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://aromasquirences.com/" />
+    <meta property="twitter:title" content="Aromas Quirences | Jugos Naturales & Pulpa de Fruta de Zetaquira" />
+    <meta property="twitter:description" content="✅ Jugos 100% naturales y pulpa de fruta directamente de Zetaquira, Boyacá. 🥭🍓 Calidad de exportación, sin conservantes." />
+    <meta property="twitter:image" content="https://aromasquirences.com/logo.png" />
+
+    <!-- Preconnect and Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://images.unsplash.com" />
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet" />
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Aromas Quirences - Desde Zetaquira, Boyacá" />
-    <meta property="og:description" content="Del campo boyacense a tu mesa. Pulpa de fruta, jugos naturales y congelados IQF con el aroma único de nuestra tierra." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="/logo.png" />
+    <!-- Structured Data Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FoodEstablishment",
+      "name": "Aromas Quirences",
+      "description": "Productora de jugos 100% naturales y pulpa de fruta de Zetaquira, Boyacá con calidad de exportación",
+      "url": "https://aromasquirences.com",
+      "logo": "https://aromasquirences.com/logo.png",
+      "image": "https://aromasquirences.com/JugoMango.png",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Zetaquira",
+        "addressRegion": "Boyacá",
+        "addressCountry": "CO"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+57 300 000 0000",
+        "contactType": "Customer Service",
+        "availableLanguage": ["Spanish"]
+      },
+      "sameAs": [
+        "https://wa.me/573000000000"
+      ],
+      "offers": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Product",
+            "name": "Jugos Naturales"
+          }
+        },
+        {
+          "@type": "Offer", 
+          "itemOffered": {
+            "@type": "Product",
+            "name": "Pulpa de Fruta Congelada IQF"
+          }
+        }
+      ]
+    }
+    </script>
 
     <!-- Favicon -->
     <link rel="icon" href="/logo.png" />
+    <link rel="apple-touch-icon" href="/logo.png" />
   </head>
   <body class="font-lato">
     <slot />
